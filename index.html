@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>$alina</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #282c34;
+        color: #fff;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
+      .terminal {
+        background-color: #1e1e1e;
+        width: 80%;
+        max-width: 800px;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 2rem;
+      }
+      .middle-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        width: 100%;
+      }
+      .side-menu {
+        width: 100%;
+      }
+      .main-content {
+        width: 100%;
+      }
+      @media screen and (min-width: 768px) {
+        .middle-section {
+          flex-direction: row;
+          gap: 30px;
+        }
+        .side-menu {
+          width: 250px;
+          flex-shrink: 0;
+        }
+        .main-content {
+          flex: 1;
+        }
+      }
+    </style>
+    <script src="js/index.iife.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.solanaWeb3 || console.error("SolanaWeb3 yüklenemedi!");
+      });
+    </script>
+    <script defer="defer" src="js/main.5c547411.js"></script>
+    <link href="css/main.fff8bb81.css" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="container">
+        <h1>$alina</h1>
+        <p class="subtitle"></p>
+        <div class="terminal"><span style="color: #666">&gt;&gt;</span></div>
+      </div>
+    </div>
+  </body>
+</html>
